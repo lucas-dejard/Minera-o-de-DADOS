@@ -1,0 +1,33 @@
+
+### INSTALAÇÃO DAS DEPENDENCIAS ###
+
+jupyter notebook
+
+virtualenv DiabetesEnv
+
+source DiabetesEnv/bin/activate
+
+pip install pandas
+
+pip install IPython
+
+pip install seaborn
+
+pip install pandas-profiling
+
+pip install jupyterlab
+
+jupyter-lab
+
+
+### CÓDIGO USADO NA AULA ###
+
+
+import pandas as pd
+df = pd.read_csv('diabetes.csv')
+
+print(df.head())
+
+import pandas_profiling as pp
+pp.ProfileReport(df)
+# Visualization Imports
